@@ -1,0 +1,6 @@
+name: busy stats
+collections:
+  - reports
+collections:
+  reports:
+    output: true

@@ -1,0 +1,661 @@
+/* @override http://0.0.0.0:4000/css/style.css */
+
+* {
+	-webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding: 0 0 0 250px;
+	margin: 0;
+	background: #000;
+}
+body.full {
+	padding: 0;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* @group Nav */
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 250px;
+	padding: 200px 0 0 0;
+	background: -webkit-linear-gradient(15deg, #2d363c, #1e272f) rgba(0,0,0,.05);
+	background: linear-gradient(-135deg, #2d363c 50%, #1e272f 100%) rgba(0,0,0,.05);
+	text-align: center;
+	/*box-shadow: 5px 0px 5px -5px rgba(0,0,0,.25), -1px 0 0 0 rgba(255,255,255,.05) inset;*/
+	border-right: 1px solid rgba(0,0,0,.05);
+	-webkit-transition: all .3s ease-in-out 0s;
+	        transition: all .3s ease-in-out 0s;
+}
+nav > .menu-button {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: -170px;
+	width: 48px;
+	height: 36px;
+	margin: 0 0 0 36px;
+	cursor: pointer;
+}
+nav > .menu-button > span {
+	position: relative;
+	display: block;
+	background: #fff;
+	height: 8px;
+	margin: 6px 0;
+	border-radius: 3px;
+	-webkit-transition: all 1s ease-in-out 0s;
+	        transition: all 1s ease-in-out 0s;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+
+
+
+nav > header {
+	position: absolute;
+	left: 5%;
+	top: 0;
+	width: 90%;
+	height: 200px;
+	margin: 0;
+	padding: 0  12px  12px 12px;
+	border-bottom: 1px dotted rgba(0,0,0,.15);
+	box-shadow: 0px 1px 0px rgba(255,255,255,.05);
+}
+nav > header > a {
+	display: inline-block;
+	margin: 0;
+	font: 100 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+nav > header > a > div {
+	display: inline-block;
+	font:900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0px;
+}
+nav > header > a > img {
+	width: 75%;
+	margin: 0 0 12px 0;
+}
+
+
+
+nav > ul {
+	list-style: none;
+	height: 100%;
+	margin: 0;
+	padding: 24px;
+	text-align: left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+nav > ul > h3 {
+	margin: 12px 0 12px 0;
+	font: 700 12px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+nav > ul > h3~h3 {
+	margin-top: 48px;
+}
+nav > ul > li {
+	margin: 0 0 6px 0;
+	padding: 0;
+	color: #fff;
+	border: 1px solid rgba(0,0,0,0);
+}
+nav > ul > li:hover {
+	color: #f9bc13;
+}
+nav > ul > li > a {
+	display: block;
+	padding: 3px 12px;
+	border: 1px solid rgba(0,0,0,0);
+	text-decoration: none;
+	font:200 16px/24px"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: inherit;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+nav > ul > li.selected > a {
+	border-color: #f9bc13;
+	border-radius: 36px;
+	color: #f9bc13;
+}
+
+
+nav > footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 250px;
+	padding: 12px;
+	background: rgba(255,255,255,.05);
+}
+nav > footer > p {
+	color: rgba(255,255,255,.5);
+	font: 100 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+nav > footer > p > img {
+	display: block;
+	width: 175px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+/* @end */
+
+
+
+
+
+
+/* @group CONTENT */
+.content {
+	height: 100%;
+	position: relative;
+	background: #fff;
+}
+.content.two {
+	
+}
+.content > section {
+	padding: 48px;
+}
+.content > section > h3 {
+	margin: 0 0 48px 0;
+	font: 200 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	/*text-transform: uppercase;*/
+}
+/* @end */
+
+
+
+
+
+
+/* @group Report */
+.report {
+	height: 100%;
+	padding-top: 72px;
+}
+.full .report {
+	padding: 0;
+}
+.report > header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 72px;
+	padding: 24px;
+	/*margin: 0 0 48px 0;*/
+	text-align: center;
+}
+.report > header > h1 {
+	text-align: left;
+	font: 200 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+/* @end */
+
+
+
+
+
+
+/* @group LINE CHART */
+#line-chart {
+	width: 100%;
+	/*margin: -48px -48px 0 -48px;*/
+	/*padding: 24px;*/
+}
+/* @end */
+
+
+
+
+
+
+
+
+/* @group Form */
+form {
+	text-align: center;
+	max-width: 320px;
+	/*margin: 0 auto 48px auto;*/
+	text-align: left;
+}
+form > label {
+	display: block;
+	width: 100%;
+	margin: 0 0 24px 0;
+	padding: 0 12px;
+	background: #fff;
+	border: 1px solid #3b4750;
+	border-radius: 1px;
+	white-space: nowrap;
+	cursor: text;
+}
+form > label > span {
+	display: inline-block;
+	width: 20%;
+	font:400 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: left;
+}
+form > label > input+span {
+	text-align: right;
+}
+form > label > input {
+	display: inline-block;
+	width: 80%;
+	padding: 12px 0;
+	border: none;
+	outline: none;
+	font:200 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+form > label.half {
+	width: 49%;
+	float: left;
+}
+form > label.half+.half {
+	margin-left:2% ;
+}
+form > label.half > input {
+	/*padding: 24px 0;*/
+}
+form > .button {
+	
+}
+
+
+.button {
+	position: relative;
+	padding: 12px 36px;
+	/*background: #f9bc13;*/
+	background: none;
+	border: 1px solid #f9bc13;
+	border-radius: 48px;
+	font:400 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #f9bc13;
+	text-decoration: none;
+}
+.button:hover {
+	cursor: pointer;
+	top: -2px;
+	box-shadow: 2px 4px 0 -1px #f9bc13;
+}
+.button:active {
+	top: 0px;
+	box-shadow: 2px 4px 0 -1px #00cc85 inset;
+	/*box-shadow: none;*/
+	background: #f9bc13;
+	border: 1px solid #00cc85;
+	color: #fff;	
+}
+
+/* @end */
+
+
+
+
+/* @group MAIN BANNER */
+.main-banner {
+	position: relative;
+	height: 60%;
+	min-height: 320px;
+	/*background: #000;*/
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	background-position: center; center;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+}
+.main-banner.tall {
+	height: 80%;
+}
+.main-banner:before {
+	content: '\00a0';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, .5) 0%, rgba(0,0,0,.75) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, .5) 0%, rgba(0,0,0,.75) 100%);
+}
+.main-banner.light:before {
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,.15) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,.15) 100%);
+}
+.main-banner.contrast:before {
+	background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, .25) 0%, rgba(0,0,0,1) 100%);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, .25) 0%, rgba(0,0,0,1) 100%);
+}
+.main-banner:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+.main-banner > img {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	max-width: 540px;
+	max-height: 100%;
+	margin: 0 -.25em;
+	vertical-align: middle;
+	text-align: left;
+	white-space: normal;
+}
+
+
+
+/* @group HGROUP */
+.main-banner > hgroup {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	width: 50%;
+	max-width: 720px;
+	margin: 0 -.25em;
+	vertical-align: middle;
+	text-align: left;
+	white-space: normal;
+}
+.main-banner hgroup.center {
+	text-align: center;
+}
+.main-banner > hgroup > h1 {
+	font: 500 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 6px rgba(0,0,0,.5);
+	text-transform: uppercase;
+	color: #fff;
+}
+.main-banner > hgroup > h1.large {
+	font-size: 48px;
+	font-weight: 60px;
+}
+.main-banner > hgroup > h1.thin {
+	font-weight: 200;
+}
+
+.main-banner > hgroup > h2 {
+	font: 100 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	color: #fff;
+}
+
+
+/* @group Winery Title */
+.main-banner > hgroup > h1.winery-title {
+	font: 900 48px/54px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.main-banner > hgroup.full > h1.winery-title > span {
+	display: block;
+	font: 100 41px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: capitalize;
+}
+/* @end */
+
+
+
+/* @group Author */
+.main-banner > hgroup > .author {
+	padding: 48px 0 0 0;
+}
+.main-banner > hgroup > .author > .image {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	/*border: 1px solid rgba(255,255,255,0);*/
+	/*box-shadow: 0 0 0px 1px #fff inset;*/
+	border-radius: 72px;
+	background-size: cover;
+	background-position: center;
+}
+.main-banner > hgroup > .author > p {
+	color: #fff;
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+.main-banner > hgroup > .author > p:before {
+	content: 'by ';
+	font-weight: 100;
+}
+/* @end */
+
+/* @end */
+
+/* @group HGROUP FULL */
+.main-banner > hgroup.full {
+	width: 100%;
+	max-width: 1080px;
+	text-align: center;
+}
+/* @end */
+
+/* @group HGROUP PARTIAL */
+.main-banner > hgroup.partial{
+	width: 100%;
+	max-width: 960px;
+	text-align: center;
+}
+/* @end */
+
+/* @group HGROUP LEFT */
+.main-banner > hgroup.left {
+	width: 100%;
+	max-width: 1080px;
+	text-align: left;
+}
+.main-banner > hgroup.left > h1 {
+	width: 50%;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @end */
+
+
+/* @group ALTERNATING */
+section.alternating {
+	padding: 0;
+	overflow: hidden;
+}
+.alternating > div {
+	position: relative;
+	/*overflow: hidden;*/
+	margin: 96px 0;
+	padding: 96px 0;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.alternating > div:first-of-type {
+	/*margin: 48px 0;*/
+}
+.alternating > div > img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 100%;
+	margin: 0 0 0 48px;
+}
+
+.alternating > div > hgroup {
+	padding: 0 50% 0 5%;
+}
+.alternating > div > hgroup > h2 {
+	margin: 0 0 48px;
+	font: 200 52px/1.0865em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.alternating > div > hgroup > p {
+	font: 400 18px/1.45em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 0 36px 0;
+	/*float: left;*/
+	/*width: 60%;*/
+	clear: left;
+}
+
+
+.alternating > div:nth-of-type(even) > hgroup {
+	padding: 0 5% 0 50%;
+}
+.alternating > div:nth-of-type(even) > img  {
+	left: auto;
+	right: 50%;
+	margin: 0 48px 0 0;
+}
+.alternating > div:nth-of-type(even) > h2 {
+	float: right;
+}
+.alternating > div:nth-of-type(even) > p {
+	float: right;
+	clear: right;
+}
+
+/* @end */
+
+
+
+
+
+
+
+
+@media all and (max-width: 720px) {
+body {
+	padding: 0;
+}
+nav {
+	z-index: 100000;
+	left: -250px;
+}
+nav > .menu-button {
+	position: relative;
+	display: block;
+}
+
+nav.open {
+	left: 0;
+}
+nav.open > .menu-button {
+	
+}
+nav.open > .menu-button > span {
+	-webkit-transition: all 1s ease-in-out 0s;
+	        transition: all 1s ease-in-out 0s;	
+}
+nav.open > .menu-button > span.one {
+	top: 14px;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+nav.open > .menu-button > span.two {
+	top: 0px;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+nav.open + .content {
+	opacity: .25;
+	filter: alpha(opacity=25);
+}
+nav.open > .menu-button > span.three {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+
+.content > header > hgroup {
+	padding-left: 84px;
+}
+
+
+.main-banner  {
+	padding: 48px;
+}
+
+
+
+
+
+.alternating {
+	/*max-width: 480px;*/
+}
+.alternating > div {
+	/*padding: 24px 0;*/
+	padding: 0;
+	text-align: center;
+}
+.alternating > div > hgroup {
+	padding: 24px!important;
+	text-align: center;
+}
+.alternating > div > hgroup > br {
+	display: none;
+	
+}
+.alternating > div:first-of-type {
+	/*padding-bottom: 24px;*/
+}
+
+.alternating > div > img {
+	position: relative;
+	left: auto;
+	right: auto!important;
+	height: 240px;
+	margin: 0!important;
+}
+.alternating > div > hgroup > h2 {
+		font-size: 36px;
+}
+.alternating > div > hgroup > p {
+	
+}
+
+}

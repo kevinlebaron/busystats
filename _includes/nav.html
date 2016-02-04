@@ -1,0 +1,81 @@
+<nav class="">
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<header>
+		<a href="/">
+			<img src="/images/logos/logo.png" alt="" />
+			<p>busy <strong>stats</strong></p>
+		</a>
+	</header>
+	<ul>
+		{% for item in site.reports %}
+			{% if item.url == page.url %}			
+				<li class="selected">
+					<a href="{{ item.url }}">{{ item.title }}</a>
+				</li>
+			{% else %}
+				<li class="">
+					<a href="{{ item.url }}">{{ item.title }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+		<!--<h3>Acquisition</h3>
+		<li class="selected">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		
+		<h3>Activation</h3>			
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		
+		<h3>Revenue</h3>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		
+		<h3>Retention</h3>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		
+		
+		<h3>Referral</h3>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>
+		<li class="">
+			<a href="/">Time Card Usage</a>
+		</li>-->
+	</ul>
+	<!--<footer>
+		<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>
+	</footer>-->
+</nav>
