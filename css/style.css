@@ -560,7 +560,19 @@ section.alternating {
 /* @end */
 
 
-
+.gallery {
+	height: 100%;
+}
+.gallery div {
+	height: 100%;
+	width: 100%;
+}
+.gallery .report.gallery-cell {
+	height: 100%;
+}
+.flickity-prev-next-button {
+	display: none;
+}
 
 
 
