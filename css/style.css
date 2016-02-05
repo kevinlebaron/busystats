@@ -571,7 +571,7 @@ section.alternating {
 	height: 100%;
 }
 .flickity-prev-next-button {
-	/*display: none;*/
+	display: none;
 }
 
 
